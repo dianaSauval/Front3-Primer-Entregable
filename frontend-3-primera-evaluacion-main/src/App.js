@@ -9,7 +9,7 @@ class App extends React.Component {
     super(props);
     this.state={
       nroHistoria:1,
-      id:1,
+      id:"1",
       seleccionAnterior:"",
       opcionesElegidas:[]
     };
@@ -25,9 +25,18 @@ class App extends React.Component {
       seleccionAnterior:opcionElegida,
       opcionesElegidas: [...this.state.opcionesElegidas, opcionElegida]
     })
+    console.log(this.state.nroHistoria);
   }
 
-  render(){
+  componentDidUpdate() {
+    if (this.state.nroHistoria >=6) {
+      alert(
+        "FIN"
+      );
+    }
+  }
+
+  render(){    
     return (
       <div className="App">
         {this.state.id===1
@@ -36,24 +45,23 @@ class App extends React.Component {
             handleClick={this.handleClick} 
             historia={element.historia}
             opcion1={element.opciones.a}
-            opcion2={element.opciones.b}            
+            opcion2={element.opciones.b}                        
             />
         ))
         : data
               .filter((element)=>element.id === this.state.id)
               .map((element)=>(
-                <Historia
+                <Historia 
                 handleClick={this.handleClick} 
                 historia={element.historia}
                 opcion1={element.opciones.a}
                 opcion2={element.opciones.b}
-                seleccionAnterior={this.state.seleccionAnterior}
-                opcionesElegidas={this.state.opcionesElegidas.map((opcion)=>{
+                seleccionAnterior={this.state.seleccionAnterior}                
+                opcionesElegidas={this.state.opcionesElegidas.map((opcion)=>{                  
                   return <li>{opcion}</li>
-                })}
+                })}                              
                 />
-              ))}
-        
+              ))}        
       </div>
     );
   }
