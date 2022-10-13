@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Front3-Primer-entregable/proyecto/static/css/main.84532a40.chunk.css",
+    "main.js": "/Front3-Primer-entregable/proyecto/static/js/main.35367ad2.chunk.js",
+    "main.js.map": "/Front3-Primer-entregable/proyecto/static/js/main.35367ad2.chunk.js.map",
+    "runtime-main.js": "/Front3-Primer-entregable/proyecto/static/js/runtime-main.debe2f07.js",
+    "runtime-main.js.map": "/Front3-Primer-entregable/proyecto/static/js/runtime-main.debe2f07.js.map",
+    "static/js/2.feb29009.chunk.js": "/Front3-Primer-entregable/proyecto/static/js/2.feb29009.chunk.js",
+    "static/js/2.feb29009.chunk.js.map": "/Front3-Primer-entregable/proyecto/static/js/2.feb29009.chunk.js.map",
+    "index.html": "/Front3-Primer-entregable/proyecto/index.html",
+    "static/css/main.84532a40.chunk.css.map": "/Front3-Primer-entregable/proyecto/static/css/main.84532a40.chunk.css.map",
+    "static/js/2.feb29009.chunk.js.LICENSE.txt": "/Front3-Primer-entregable/proyecto/static/js/2.feb29009.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.debe2f07.js",
+    "static/js/2.feb29009.chunk.js",
+    "static/css/main.84532a40.chunk.css",
+    "static/js/main.35367ad2.chunk.js"
+  ]
+}
